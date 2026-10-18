@@ -1,4 +1,5 @@
-# This fork removes the PID1 SIGNAL_UNKILLABLE feature from the kernel for testing purposes.
+This fork removes the PID1 SIGNAL_UNKILLABLE feature from the kernel for testing purposes.
+
 Linux kernel
 ============
 
