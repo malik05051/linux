@@ -2534,7 +2534,6 @@ __latent_entropy struct task_struct *copy_process(
 
 				ASSERT_EXCLUSIVE_WRITER(ns->child_reaper);
 				WRITE_ONCE(ns->child_reaper, p);
-				p->signal->flags |= SIGNAL_UNKILLABLE;
 			}
 			p->signal->shared_pending.signal = delayed.signal;
 			p->signal->tty = tty_kref_get(current->signal->tty);
